@@ -430,7 +430,7 @@ background: #fff;
 /* Phone number, email, and WhatsApp buttons color and size */
 .contact-btn {
     color: white;
-    font-size: 18px; /* Adjust the font size as needed */
+    font-size: 30px; /* Adjust the font size as needed */
     text-align: center;
     text-decoration: none;
     display: inline-block;
