@@ -22,7 +22,7 @@ html{
     font-size: 14px;
     position: absolute;
     transform: translateX(10px);
-    color: #fff;
+    color: #ffffff;
     font-weight: bold;
     margin-top: -8px;
     text-transform: uppercase;
@@ -46,6 +46,14 @@ body{
 }
 .navbar{
     padding-top: 20px !important;
+}
+.navbar-nav a {
+    color: blue;
+}
+
+/* Active navbar link color */
+.navbar-nav .active-home {
+    color: blue; /* Change to the color you prefer for the active link */
 }
 .navbar-brand img{
     width: 120px;
@@ -204,11 +212,7 @@ background: #fff;
   
   } */
  
-.sub-title{
-    text-align: center;
-    margin-bottom: 70px;
-    font-size: 15px;
-}
+
 .service-box{
     padding: 0 35px;
     cursor: pointer;
@@ -349,66 +353,99 @@ background: #fff;
     background: var(--primaryColor);
     padding-top: 5px;
 }
-.footer h2{
-    color: #fff;
-    font-weight: 600;
-    margin: 20px 0;
-}
-.footer input{
-    width: 60%;
-    background: transparent;
-    outline: none;
-    border: 0;
-    border-bottom: 1px solid #fff;
-    margin-bottom: 30px;
-    text-align: center;
-}
-::placeholder{
-    color: rgb(185, 194, 202);
-    font-size: 16px;
-}
-.footer button{
-    padding: 6px;
-    width: 180px;
-    margin: auto;
-    display: block;
-    border: 1px solid #fff;
-    background: transparent;
-    color: #fff;
-    font-size: 20px;
-    margin-top: 25px;
-}
-.footer .btn1{
-    padding: 6px;
-    width: 180px;
-    margin: auto;
+.footer .contact-container{
+    height: 80vh;
     display: flex;
-    background: #dd5f5f;
-    border:0;
-    color: #fff;
-    font-size: 20px;
+    align-items: center;
+    justify-content: space-evenly;
 }
-.footer button:hover{
-    background: #334;
-    opacity: 1;
-    transition: 0.9s ease;
+.footer .contact-left{
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
 }
-.footer small{
-    font-size: 14px;
-    padding: 70px;
-    padding-bottom: 20px;
-    display: block;
-    color: #fff;
+.footer .contact-left-title h2{
+    font-weight: 600;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 5px;
+
 }
-textarea{
-    border-radius: 6px;
-    width:60%;
-    height: 78px;
+.footer .contact-left-title hr{
+    border: none;
+    width: 120px;  
+    height: 5px;
+    background-color: white;
+    border-radius: 10px;
+    border-bottom: 20px;
 }
-.form-select{
-    display: inline-block !important;
-    width: 60% !important;
+.footer .contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
 }
+.footer .contact-left textarea{
+    height: 150px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+.footer .contact-inputs:focus{
+    border: 2px solid #ff994f;
+}
+.footer .contact-inputs::placeholder{
+    color: #a9a9a9;
+
+}
+.footer .contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: white;
+    gap: 10px;
+    border: none;
+    border-radius:50px;
+    background: linear-gradient(270deg,#ff994f,#fa6d86);
+    cursor: pointer;  
+}
+.footer .contact-left button img{
+    height: 15px;
+}
+/* style.css */
+
+/* Contact buttons container */
+.contact-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Adjust the gap between buttons as needed */
+}
+
+/* Phone number, email, and WhatsApp buttons color and size */
+.contact-btn {
+    color: white;
+    font-size: 18px; /* Adjust the font size as needed */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    border: 2px solid white; /* Optional: Add a border for a cleaner look */
+    border-radius: 5px;
+}
+
+.contact-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
 
 
 /*media Querries*/
@@ -437,4 +474,8 @@ textarea{
         cursor: pointer;
         transform: translateY(40px);
     }
+    .contact-inputs{
+        width: 80vw;
+    }
+   
 }
